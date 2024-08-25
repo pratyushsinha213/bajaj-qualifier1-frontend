@@ -39,7 +39,7 @@ function App() {
   
     try {
       const parsedData = JSON.parse(jsonData);
-      const res = await axios.post('http://localhost:3000/bfhl', { data: parsedData.data });
+      const res = await axios.post('https://bajaj-qualifier1-backend-zuph.onrender.com/bfhl', { data: parsedData.data });
       setResponse(res.data);
       setShowDropdown(true);
     } catch (err) {
